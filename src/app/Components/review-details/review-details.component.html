@@ -1,0 +1,26 @@
+<div class="container">
+  <div id="Technical_part"> 
+      <div class="container1">
+          <div id="DivImage">
+            <img id="img1" [src]="'http://ataal.somee.com/' + TechnicalData?.photo" class="card-img-top img-profile" alt="photo">
+          </div>
+        </div>
+        <div>
+          <h1 id="TName"> {{TechnicalData?.name}}</h1>
+          <h5 id="Tbrief" > {{TechnicalData?.brief}}</h5>
+        </div>
+   </div>
+    <div class="card" style="width: 80%; position: relative;">
+      <h1 id="ReviewTitle"> Review </h1>
+      <div class="card-body" *ngIf="ReviewDetials">
+        <p id="Desc" class="card-text">{{ReviewDetials?.description}}</p>
+        <p id="Desc2" class="card-text">Customer Name :  {{CustomerData?.firstName}} {{CustomerData?.lastName}}</p>
+        <p id="Desc2" class="card-text">Customer Email :  {{CustomerData?.email}} </p>
+        <p id="Desc3" class="card-text">Date Of Review : {{getDate(ReviewDetials?.dateTime)}}</p>
+      </div>
+      <div class="card-footer" style="position: absolute; bottom: 0; width: 100%;">
+        <button class="btn btn-primary btn-custom" style="float: left" (click)="goBack()">Go Back</button>
+        <button class="btn btn-danger btn-custom" style="float: right" (click)="Delete()">Delete</button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,130 @@
+
+  <nav *ngIf="Logged" class="main-header navbar navbar-expand navbar-dark">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a id="link" class="nav-link" routerLinkActive="active" routerLink="Home">Home</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown notification-bar">
+        <a class="nav-link notification-icon" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge notification-badge">{{ReportCount}}</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right notification-menu">
+          <div class="NotificationsContainer notification-item" *ngFor="let report of Last3ReportData">
+            <a routerLink="/ReportDetails/{{report.id}}" class="notification-link">
+              <h6 class="notification-title">New Report!</h6>
+              <h3 class="dropdown-item-title notification-description">
+                {{report.description}}
+                <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+              </h3>
+              <p class="text-sm text-muted notification-time">
+                <i class="far fa-clock mr-1"></i> {{report.created_Date}}
+              </p>
+            </a>
+          </div>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+     
+    </ul>
+  </nav>
+
+
+
+
+  <aside *ngIf="Logged" class="main-sidebar sidebar-dark-primary elevation-4">
+>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                 Ataal
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+
+              <li class="nav-item">
+                <a id="link" class="nav-link" routerLinkActive="active" routerLink="Home">
+                  <i class="fas fa-home nav-icon"></i>
+                  <p>Home</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="link" class="nav-link" routerLinkActive="active" routerLink="section">
+                  <i class="fas fa-th nav-icon"></i>
+                  <p>Sections</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="link" class="nav-link" routerLinkActive="active" routerLink="Technicals">
+                  <i class="fas fa-cogs nav-icon"></i>
+                  <p>Technical</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="link" class="nav-link" routerLinkActive="active" routerLink="Reviews">
+                  <i class="fas fa-star nav-icon"></i>
+                  <p>Review</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="link" class="nav-link" routerLinkActive="active" routerLink="Problems">
+                  <i class="fas fa-exclamation-triangle nav-icon"></i>
+                  <p>Problem</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="link" class="nav-link" routerLinkActive="active" routerLink="Reports">
+                  <i class="fas fa-file nav-icon"></i>
+                  <p>Report</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="link" class="nav-link" (click)="logout()">
+                  <i class="fas fa-file nav-icon"></i>
+                  <p>LogOut</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+    
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>

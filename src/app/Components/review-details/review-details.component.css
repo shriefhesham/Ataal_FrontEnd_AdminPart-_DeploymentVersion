@@ -1,0 +1,89 @@
+.img-profile {
+    margin-left: 15px;
+    width: 420px !important;
+    height: 300px !important;
+  }
+.container1 {
+    width: 40%; /* or any other width you want */
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+.card { 
+    width: 100%;
+    height: 25rem;
+    margin: auto;
+    border-radius: 8px;
+    
+}
+div {
+    display: block;
+  }
+
+.card-title{
+
+    text-align: center !important;
+    font-size: 30px;
+    font-family: bold;
+}
+
+#Desc{
+    /* margin-top: 60px; */
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.cardContainer
+{
+    border-radius: 20px solid black 1px;
+    width: 500px;
+}
+
+#img1
+{
+
+ width: 100%;
+ height: 100%;
+ border-radius: 10%;
+
+}
+
+.btn-custom {
+    font-size: 12px;
+    padding: 12px 24px;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+
+  #TName
+  {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #Tbrief
+  {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  #ReviewTitle
+  {
+    text-align: center;
+    font-size: 30px;
+    background-color: #0360be;
+    border-radius: 10px;
+  }
+  
+  #Desc2
+  {
+    margin-top: 5px;
+    float: right;
+  }
+
+  #Desc3
+  {
+    float: right;
+  }

@@ -1,0 +1,42 @@
+
+  
+  .image-container {
+    display: flex;
+    width: 260px;
+    height: 180px;
+    margin-left: 30px;
+  }
+
+  #Desc
+  {
+    font-size: 18px;
+  }
+
+  #title
+  {
+    font-size: 30px;
+  }
+  #Cus_Name
+  {
+    font-size: 18px;
+    font-family: bold;
+
+  }
+  #Name
+  {
+    font-size: 15px;
+  }
+
+
+  #btnArea
+  {
+    display: flex;
+    justify-content: center;
+  }
+  #btn
+  {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+
+  }

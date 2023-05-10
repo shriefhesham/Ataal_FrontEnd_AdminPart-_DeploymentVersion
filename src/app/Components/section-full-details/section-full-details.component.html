@@ -1,0 +1,20 @@
+<!-- Navigation bar -->
+<nav id="Pagination_Nav" aria-label="...">
+    <ul class="pagination pagination-lg">
+      <li class="page-item" [routerLink]="'ProblemSection'"    routerLinkActive="active">
+        <span id="Pages_Span" class="page-link">Problems</span>
+      </li>
+      <li class="page-item" [routerLink]="'KeyWordSection'" routerLinkActive="active">
+        <span id="Pages_Span" class="page-link">Keywords</span>
+      </li>
+      <li class="page-item" [routerLink]="'TechnicalSection'" routerLinkActive="active">
+        <span  id="Pages_Span" class="page-link">Technicals</span>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- Router outlet for displaying components -->
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+

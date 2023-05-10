@@ -1,0 +1,22 @@
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th id="th_title">ID</th>
+        <th id="th_title">First Name</th>
+        <th id="th_title">Last Name</th>
+        <th id="th_title">Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let Technical of SectionTechnicals">
+        <td id="td">{{ Technical?.id }}</td>
+        <td id="td">{{ Technical?.fName }}</td>
+        <td id="td">{{ Technical?.lName }}</td>
+        <td id="td">{{ Technical?.addres }}</td>
+        <td> <button class="btn btn-primary" style="font-size: 12px; padding: 10px;"><a class="text-white text-decoration-none" routerLink="/TechnicalProfile/{{Technical.id}}">View Profile</a></button></td>
+      </tr>
+    </tbody>
+  </table>
+<div id="btnArea">
+    <button id="btn" class="btn btn-primary" routerLink="/section">Back</button>
+</div>

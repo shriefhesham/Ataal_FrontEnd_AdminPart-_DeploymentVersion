@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="image-container">
+    <img id="img" [src]="'http://ataal.somee.com/' + ProblemFullDetails?.photoPath1" class="card-img-top img-fluid" alt="photo">
+    <img id="img" [src]="'http://ataal.somee.com/' + ProblemFullDetails?.photoPath2" class="card-img-top img-fluid" alt="photo">
+    <img id="img" [src]="'http://ataal.somee.com/' + ProblemFullDetails?.photoPath3" class="card-img-top img-fluid" alt="photo">
+    <img id="img" [src]="'http://ataal.somee.com/' + ProblemFullDetails?.photoPath4" class="card-img-top img-fluid" alt="photo">
+  </div>
+
+  <div class="container2">
+  
+      <div class="card text-center">
+        
+          <div  class="card-header">
+           <h1 id="title"> {{ProblemFullDetails?.title}} </h1>
+          </div>
+          <div  class="card-headehr">
+            <p id="Desc"> {{ProblemFullDetails?.description}} </p>  
+           </div>
+           <div class="sign-shape">
+               <h3 id="Check"> Solved :</h3>
+             <div class="sign-circle" [class.signed-in]="ProblemFullDetails?.isSolved">
+               <p class="sign-label">{{ ProblemFullDetails?.isSolved ?  '✔' : 'X'  }}</p>
+             </div>
+           </div>
+       
+           <div class="sign-shape">
+               <h3 id="Check"> VIP :</h3>
+               <div class="sign-circle" [class.signed-in]="ProblemFullDetails?.isVIP ">
+                 <p class="sign-label">{{ ProblemFullDetails?.isVIP  ?  '✔' : 'X'  }}</p>
+               </div>
+             </div>
+           <p id="date"> Created Date {{getDate(ProblemFullDetails?.date)}} </p>  
+           <div class="card-header">
+        </div>
+            <div class="btncontainer">
+              <button id="btnBack" class="btn btn-primary btn-custom" (click)="goBack()">Go Back</button>
+            </div>
+    </div>
+</div>
+
+
+<!--   
+  <div id="btnArea">
+  <button id="btn" class="btn btn-primary" routerLink="/section">Back</button>
+  </div> -->

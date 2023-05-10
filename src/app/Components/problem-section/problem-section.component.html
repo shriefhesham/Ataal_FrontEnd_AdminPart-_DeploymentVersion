@@ -1,0 +1,23 @@
+<div *ngFor="let ProblemItem of SectionProblems" class="card text-center">
+  
+  <div  class="card-header">
+   <h1 id="title"> {{ProblemItem?.title}} </h1>
+  </div>
+  <div  class="card-header">
+    <p id="Desc"> {{ProblemItem?.description}} </p>  
+   </div>
+   <div class="card-header">
+    <div class="image-container">
+        <img [src]="'http://ataal.somee.com/' + ProblemItem?.photo1" class="card-img-top img-fluid" alt="photo">
+        <img [src]="'http://ataal.somee.com/' + ProblemItem?.photo2" class="card-img-top img-fluid" alt="photo">
+        <img [src]="'http://ataal.somee.com/' + ProblemItem?.photo3" class="card-img-top img-fluid" alt="photo">
+        <img [src]="'http://ataal.somee.com/' + ProblemItem?.photo4" class="card-img-top img-fluid" alt="photo">
+      </div>
+    <div  class="card-footer text-body-secondary">
+        <p id="Cus_Name">Customer Name: <span id="Name">{{ ProblemItem?.customerDto?.frist_Name }} {{ ProblemItem?.customerDto?.last_Name }} </span></p>
+    </div>
+</div>
+
+<div id="btnArea">
+<button id="btn" class="btn btn-primary" routerLink="/section">Back</button>
+</div>

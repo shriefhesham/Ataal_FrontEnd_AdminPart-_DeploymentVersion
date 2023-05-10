@@ -1,0 +1,59 @@
+
+.container
+{
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgba(37, 33, 33, 0);
+    width: 700px;
+    height: 500px;
+    margin-top: 50px; 
+}
+.my-form {
+    max-width: 600px; /* set the maximum width of the form */
+    margin: 0 auto; /* center the form horizontally */
+    margin-top: 60px;
+  }
+
+  #Header
+  {
+     text-align: center;
+     margin-top: 70px;
+    color: rgb(251, 251, 251);
+    font-size: 30px;
+  }
+
+  .description-input {
+    width: 100%; /* set the width of the input to 100% */
+    height: 100px; /* set the height of the input to 100 pixels */
+  }
+
+  .submit-container {
+    text-align: center; /* center the contents of the container horizontally */
+    margin-top: 1rem; /* add some top margin to the container */
+  }
+  
+  .btn-info {
+    margin: 0 auto; /* center the button horizontally */
+    display: block; /* make the button a block element to center it within the container */
+  }
+
+  #label
+  {
+    font-size: 16px;
+    font-family: bold;
+  }
+
+  input
+  {
+    font-size: 12px;
+  }
+
+  #btn
+  {
+    font-size: 16px;
+  }
+
+  textarea
+  {
+    font-size: 12px;
+  }

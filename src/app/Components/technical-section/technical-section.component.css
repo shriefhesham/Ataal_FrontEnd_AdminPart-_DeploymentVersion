@@ -1,0 +1,26 @@
+
+#btnArea
+{
+  display: flex;
+  justify-content: center;
+}
+#btn
+{
+  width: 80px;
+  height: 40px;
+  font-size: 16px;
+}
+
+#th_title
+{
+    font-size: 16px;
+}
+#td
+{
+    font-size: 14px;
+}
+
+#btn1
+{
+    font-size: 15px;
+}

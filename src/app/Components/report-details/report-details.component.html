@@ -1,0 +1,21 @@
+<div class="container">
+  
+    <div class="card text-center">
+      
+        <div  class="card-header">
+         <h1 id="title"> Report ID : {{ReportDetails?.id}} </h1>
+        </div>
+        <div  class="card-headehr">
+          <p id="Desc"> Review ID : {{ReportDetails?.review_ID}} </p>  
+         </div>
+    
+         <h2 > Cause : {{ReportDetails?.cause}} </h2>  
+         <div class="card-header">
+             <p> {{ReportDetails?.description}} </p>   
+             <p id="date"><span id="CreatedDate">Created Date :</span>  {{getDate(ReportDetails?.created_Date)}} </p>  
+      </div>
+          <div class="btncontainer">
+          <button id="btnSolve" class="btn btn-primary" style="font-size: 12px; padding: 10px;"><a class="text-white text-decoration-none" routerLink="/ReviewCheck/{{ReportDetails?.review_ID}}">Solve</a></button>
+          </div>
+  </div>
+</div>

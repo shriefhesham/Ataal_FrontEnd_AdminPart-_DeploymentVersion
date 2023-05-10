@@ -1,0 +1,35 @@
+
+<div class="design  w-50 m-auto ">
+    <h1 class="mainColor">Login </h1>
+    <form [formGroup]="Login" (ngSubmit)="submitLogin()">
+      <div class="row">
+  
+      <div class="col-md-8">
+  
+        <div class=" m-auto ">
+          <div><label>UserName</label></div>
+          <div><input formControlName="userName" type="text" class="form-control" /></div>
+          <div class="text-danger my-2"*ngIf="Login.controls['userName'].touched&&Login.controls['userName'].invalid"><p>Email Not Valid</p></div>
+        </div>
+        <div class=" m-auto ">
+          <div><label>password</label></div>
+          <div><input formControlName="password" type="password" class="form-control" /></div>
+          <div class="text-danger my-2"*ngIf="Login.controls['password'].touched&&Login.controls['password'].invalid"><p>Password Not Valid</p></div>
+        </div>
+      </div>
+      </div>
+  
+  <div class="cont">
+      <button [disabled]="Login.invalid" class="btn SubBtn" type="submit">Submit</button>
+    </div>
+  </form>
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  

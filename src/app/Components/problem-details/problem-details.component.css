@@ -1,0 +1,149 @@
+
+  
+  .image-container {
+    display: flex;
+    width: 260px;
+    height: 230px;
+   margin-right: 10px;
+   margin-bottom: 50px;
+  }
+
+  @media (max-width: 768px) {
+    
+
+    .image-container {
+      display: flex;
+      width: 140px;
+      height: 230px;
+     margin-right: 10px;
+     margin-bottom: 50px;
+  }
+  
+  @media (max-width: 992px) {
+    .image-container {
+      display: flex;
+      width: 160px;
+      height: 230px;
+     margin-right: 10px;
+     margin-bottom: 50px;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .image-container {
+      display: flex;
+      width: 200px;
+      height: 230px;
+     margin-right: 10px;
+     margin-bottom: 50px;
+    }
+    }
+  }
+
+  #img
+  {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    border-radius: 20%;
+  }
+
+  #container2
+  {
+    margin-top: 50px;  
+  }
+
+  #Desc
+  {
+    font-size: 18px;
+  }
+
+  #title
+  {
+    background-color: #0360be;
+    padding: 5px;
+    padding-bottom: 7px ;
+    border-radius: 15px;
+    font-size: 30px;
+  }
+  #Cus_Name
+  {
+    font-size: 18px;
+    font-family: bold;
+
+  }
+  #Name
+  {
+    font-size: 15px;
+  }
+
+
+  #btnArea
+  {
+    display: flex;
+    justify-content: center;
+  }
+  #btn
+  {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+
+  }
+
+  #date
+  {
+    margin-top: 10px;
+    float: right !important;
+  }
+
+  .sign-shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.sign-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.sign-circle.signed-in {
+    font-size: 20px;
+  background-color: rgb(0, 253, 0);
+}
+
+.sign-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+}
+
+#Check
+{
+    margin: 10px;
+}
+
+#btnBack
+{
+    font-size: 14px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+}
+
+.btncontainer {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    height: 100%; /* Set the height of the container to 100% */
+  }
+  
+

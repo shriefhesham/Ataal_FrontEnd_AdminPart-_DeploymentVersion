@@ -1,0 +1,26 @@
+
+    <div class="container">
+     
+        <div id="DivImage">
+            <img id="img1" [src]="'http://ataal.somee.com/' + itemDetails?.photo" class="card-img-top fixed-image" alt="photo">
+        </div>
+        
+        <div class="card" style="width: 100%;">
+            <div class="card-body" *ngIf="itemDetails">
+                <h1 id="title" class="card-title">{{itemDetails?.name}}</h1>
+                <p id="Desc" class="card-text">{{itemDetails?.description}}</p>
+                <td></td>
+            </div>
+            
+            <div class="card-footer d-flex justify-content-between">
+                <button class="btn btn-primary btn-custom" (click)="goBack()">Go Back</button>
+                <button id="btn1" class="btn btn-warning btn-custom"><a class="text-white text-decoration-none" routerLink="/UpdateSection/{{itemDetails?.id}}">Update</a></button>
+                <button id="btn1" class="btn btn-info btn-custom"><a class="text-white text-decoration-none"[routerLink]="'/FullDetails/KeyWordSection'">Full Details</a></button>
+                
+                <button class="btn btn-danger btn-custom" (click)="Delete()">Delete</button>
+              </div>
+          
+          
+        </div>
+        
+    </div>

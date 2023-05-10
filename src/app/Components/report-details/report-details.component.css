@@ -1,0 +1,70 @@
+.container {
+   margin-top: 220px;
+   justify-content: center;
+   align-items: center;
+    }
+  #Desc
+  {
+    font-size: 18px;
+  }
+
+  #title
+  {
+    background-color: #0360be;
+    padding: 5px;
+    padding-bottom: 7px ;
+    border-radius: 15px;
+    font-size: 30px;
+  }
+
+  
+
+  #btnArea
+  {
+    display: flex;
+    justify-content: center;
+  }
+  #btn
+  {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+
+  }
+
+  
+
+
+
+#btnBack
+{
+    font-size: 14px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+}
+
+.btncontainer {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    height: 100%; /* Set the height of the container to 100% */
+  }
+
+  #date
+  {
+    float: right;
+  }
+  
+  #CreatedDate
+  {
+    font-size: 14px;
+  }
+
+  #btnSolve
+  {
+    font-size: 20px;
+    width: 75px;
+    height: 45px;
+  }

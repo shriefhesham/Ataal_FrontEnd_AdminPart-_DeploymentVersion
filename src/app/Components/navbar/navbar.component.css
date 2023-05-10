@@ -1,0 +1,98 @@
+#headerProj
+{
+    margin-top: 2px;
+    font-size: 30px;
+    font-family: bold;
+}
+
+#link
+{
+    font-size: 13px;
+}
+
+#Report
+{
+    color: red;
+}
+
+/* Notification bar */
+.notification-bar {
+    position: relative;
+  }
+  
+  .notification-icon {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    min-width: 20px;
+    text-align: center;
+  }
+  
+  .notification-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    min-width: 250px;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 0.875rem;
+    color: #495057;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  }
+  
+  .notification-item {
+    padding: 0.5rem;
+    margin: 0;
+  }
+  
+  .notification-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .notification-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .notification-description {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin: 0;
+  }
+  
+  .notification-time {
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin: 0;
+  }
+  
+  .notification-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .notification-link:hover {
+    text-decoration: underline;
+  }
+
+
+

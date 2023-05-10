@@ -1,0 +1,24 @@
+#th
+{
+    font-size: 18px;
+    text-align: center;
+}
+
+#td
+{
+    font-size: 14px;
+    text-align: center;
+}
+
+#btnArea
+{
+  display: flex;
+  justify-content: center;
+}
+#btn
+{
+  width: 80px;
+  height: 40px;
+  font-size: 16px;
+
+}

@@ -1,0 +1,19 @@
+<table class="table table-bordered">
+    <caption>Section Keywords</caption>
+    <thead>
+      <tr>
+        <th id="th">Keyword</th>
+        <th id="th">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let keyword of SectionKeyWords">
+        <td id="td">{{ keyword.id }}</td>
+        <td id="td">{{ keyword.name }}</td>
+     </tr>
+    </tbody>
+  </table>
+
+  <div id="btnArea">
+    <button id="btn" class="btn btn-primary" routerLink="/section">Back</button>
+    </div>
