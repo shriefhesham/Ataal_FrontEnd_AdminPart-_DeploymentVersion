@@ -45,7 +45,7 @@
     <td id="td">{{ Review?.customerId }}</td>
     <td id="td">{{ Review?.technicalId }}</td>    
     <td id="td">{{ Review?.description }}</td>
-    <td id="td">{{ Review?.dateTime }}</td>
+    <td id="td">{{ getDate(Review?.dateTime) }}</td>
     <td> <button class="btn btn-primary" style="font-size: 12px; padding: 10px;"><a class="text-white text-decoration-none" routerLink="/ReviewDetails/{{Review.reviewId}}">Details</a></button></td>
 </tr>
 </tbody>
