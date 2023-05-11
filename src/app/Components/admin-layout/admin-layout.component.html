@@ -267,13 +267,13 @@
                     <!-- Conversations are loaded here -->
                     <div class="direct-chat-messages">
                       <!-- Message. Default to the left -->
-                      <div class="direct-chat-msg right">
+                      <div *ngIf="ReviewData[0]?.description" class="direct-chat-msg right">
                           <div class="direct-chat-infos clearfix">
                             <span class="direct-chat-name float-right"></span>
                             <span class="direct-chat-timestamp float-left">30 Feb 11:00 pm</span>
                           </div>
                           <!-- /.direct-chat-infos -->
-                          <img class="direct-chat-img" src="assets/img/user2-160x160.jpg" alt="message user image">
+                          <img [src]="'http://ataal.somee.com/' + TechnicalData[0]?.photo" title="" alt="" class="direct-chat-img">
                           <!-- /.direct-chat-img -->
                           <div class="direct-chat-text">
                             {{ReviewData[0]?.description}}
@@ -283,13 +283,13 @@
                       <!-- /.direct-chat-msg -->
 
                       <!-- Message to the right -->
-                      <div class="direct-chat-msg right">
+                      <div *ngIf="ReviewData[1]?.description" class="direct-chat-msg right">
                         <div class="direct-chat-infos clearfix">
                           <span class="direct-chat-name float-right">Alaa Salem</span>
                           <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                         </div>
                         <!-- /.direct-chat-infos -->
-                        <img class="direct-chat-img" src="assets/img/user3-128x128.jpg" alt="message user image">
+                        <img [src]="'http://ataal.somee.com/' + TechnicalData[1]?.photo" title="" alt="" class="direct-chat-img">
                         <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
                           {{ReviewData[1]?.description}}
@@ -299,13 +299,13 @@
                       <!-- /.direct-chat-msg -->
 
                       <!-- Message. Default to the left -->
-                      <div class="direct-chat-msg right">
+                      <div *ngIf="ReviewData[2]?.description" class="direct-chat-msg right">
                           <div class="direct-chat-infos clearfix">
                             <span class="direct-chat-name float-right">Sohila ALi</span>
                             <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                           </div>
                           <!-- /.direct-chat-infos -->
-                          <img class="direct-chat-img" src="assets/img/user4-128x128.jpg" alt="message user image">
+                          <img [src]="'http://ataal.somee.com/' + TechnicalData[2]?.photo" title="" alt="" class="direct-chat-img">
                           <!-- /.direct-chat-img -->
                           <div class="direct-chat-text">
                             {{ReviewData[2]?.description}}
@@ -315,13 +315,13 @@
                       <!-- /.direct-chat-msg -->
 
                       <!-- Message to the right -->
-                      <div class="direct-chat-msg right">
+                      <div *ngIf="ReviewData[3]?.description" class="direct-chat-msg right">
                           <div class="direct-chat-infos clearfix">
                             <span class="direct-chat-name float-right">Sarah Bullock</span>
                             <span class="direct-chat-timestamp float-left">20 Mar 4:30 Am</span>
                           </div>
                           <!-- /.direct-chat-infos -->
-                          <img class="direct-chat-img" src="assets/img/user3-128x128.jpg" alt="message user image">
+                          <img [src]="'http://ataal.somee.com/' + TechnicalData[3]?.photo" title="" alt="" class="direct-chat-img">
                           <!-- /.direct-chat-img -->
                           <div class="direct-chat-text">
                             {{ReviewData[3]?.description}}
