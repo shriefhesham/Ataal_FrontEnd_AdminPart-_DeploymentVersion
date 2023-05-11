@@ -133,10 +133,10 @@
                     <div class="chart">
                       <!-- Sales Chart Canvas -->
                       <!-- <canvas id="salesChart" height="180" style="height: 180px;"></canvas> -->
-                      <img  src="../../assets/img/Car.jpg" alt="AdminLTELogo" height="225" width="220">
-                      <img  src="../../assets/img/Carpenter.jpg" alt="AdminLTELogo" height="225" width="220">
-                      <img  src="../../assets/img/Pulmer.jpg" alt="AdminLTELogo" height="225" width="220">
-                      <img  src="../../assets/img/le7am.jpg" alt="AdminLTELogo" height="225" width="220">
+                      <img [src]="'https://localhost:7273/' + SectionData[0]?.photo" alt="AdminLTELogo" height="225" width="220">
+                      <img [src]="'https://localhost:7273/' + SectionData[1]?.photo" alt="AdminLTELogo" height="225" width="220">
+                      <img [src]="'https://localhost:7273/' + SectionData[2]?.photo" alt="AdminLTELogo" height="225" width="220">
+                      <img [src]="'https://localhost:7273/' + SectionData[3]?.photo" alt="AdminLTELogo" height="225" width="220">
                     </div>
                     <!-- /.chart-responsive -->
                   </div>
